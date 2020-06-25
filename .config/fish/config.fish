@@ -1,0 +1,1 @@
+/Users/declankelleher/.config/fish/config.fish

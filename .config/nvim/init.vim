@@ -1,0 +1,1 @@
+/Users/declankelleher/.config/nvim/init.vim
