@@ -30,7 +30,7 @@ set -g theme_show_exit_status yes
 set -g theme_color_scheme dark
 set -g fish_prompt_pwd_dir_length 0
 set -g theme_project_dir_length 1
-set -x EDITOR vim
+set -x EDITOR nvim
 set -Ux LC_ALL en_US.UTF-8
 set -Ux LANG en_US.UTF-8
 set -g fish_user_paths "/usr/local/bin" $fish_user_paths
@@ -43,3 +43,17 @@ if status --is-interactive
     set BASE16_SHELL "$HOME/.config/base16-shell"
     source "$BASE16_SHELL/profile_helper.fish"
 end
+
+# Start in vi mode
+fish_vi_key_bindings
+
+# and now restore ctrl+f for autocomplete
+function fish_user_key_bindings
+	for mode in insert default visual
+		bind -M $mode \cf forward-char
+		bind -M $mode \cp up-or-search
+		bind -M $mode \cn down-or-search
+	end
+end
+
+fish_user_key_bindings
