@@ -41,5 +41,5 @@ if [ -f '/Users/declankelleher/google-cloud-sdk/path.fish.inc' ]; . '/Users/decl
 # Base16 Shell
 if status --is-interactive
     set BASE16_SHELL "$HOME/.config/base16-shell/"
-    source "$BASE16_SHELL/profile_helper.fish"
+    source "$BASE16_SHELLprofile_helper.fish"
 end
