@@ -1,1 +1,31 @@
-/Users/declankelleher/.vimrc.keymap
+let mapleader=";"
+
+" remaps
+nnoremap , ;
+nnoremap <c-,> ,
+nnoremap <c-[> <Nop>
+nnoremap <c-]> <Nop>
+nnoremap <Leader>l $
+vnoremap <Leader>l $
+nnoremap <Leader>h ^
+vnoremap <Leader>h ^
+nnoremap <Leader>/ :noh<CR>
+nnoremap <Leader>w <c-w>
+nnoremap <Leader>o o<ESC>
+nnoremap <Leader>O O<ESC>
+nnoremap <Leader><c-j> J
+nnoremap <Leader>' %
+vnoremap <Leader>' %
+
+nnoremap K [m
+vnoremap K [m
+nnoremap J ]m
+vnoremap J ]m
+
+nnoremap <Leader>c) f(ci(
+nnoremap <Leader>c( F(ci(
+nnoremap <Leader>c} f{ci{
+nnoremap <Leader>c{ F{ci{
+nnoremap <Leader>c] f[ci[
+nnoremap <Leader>c[ F[ci[
+

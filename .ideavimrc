@@ -1,1 +1,99 @@
-/Users/declankelleher/.ideavimrc
+source ~/.vimrc.keymap
+
+set ideajoin
+set easymotion
+set surround
+set hls
+set incsearch
+set ignorecase
+set smartcase
+set ideamarks
+set ReplaceWithRegister
+set argtextobj
+
+" IDEA actions
+nnoremap <Leader>m :<c-u>action CollapseRegion<CR>
+vnoremap <Leader>m :<c-u>action CollapseRegion<CR>
+nnoremap <Leader><c-m> :<c-u>action CollapseRegionRecursively<CR>
+vnoremap <Leader><c-m> :<c-u>action CollapseRegionRecursively<CR>
+nnoremap <Leader>M :<c-u>action CollapseAllRegions<CR>
+vnoremap <Leader>M :<c-u>action CollapseAllRegions<CR>
+nnoremap <Leader>n :<c-u>action ExpandRegion<CR>
+vnoremap <Leader>n :<c-u>action ExpandRegion<CR>
+nnoremap <Leader><c-n> :<c-u>action ExpandRegionRecursively<CR>
+vnoremap <Leader><c-n> :<c-u>action ExpandRegionRecursively<CR>
+nnoremap <Leader>N :<c-u>action ExpandAllRegions<CR>
+vnoremap <Leader>N :<c-u>action ExpandAllRegions<CR>
+
+nnoremap <Leader>s :<c-u>action SearchEverywhere<CR>
+nnoremap <Leader>g :<c-u>action FindInPath<CR>
+nnoremap <Leader>t :<c-u>action FileStructurePopup<CR>
+nnoremap <Leader>r :<c-u>action ChooseRunConfiguration<CR>
+nnoremap <Leader>ar :<c-u>action Run<CR>
+nnoremap <Leader>a<Leader> :<c-u>action RunContextGroup<CR>
+nnoremap <Leader>x :<c-u>action RecentLocations<CR>
+nnoremap <Leader>X :<c-u>action RecentFiles<CR>
+
+nnoremap <Leader>- :<c-u>action Refactorings.QuickListPopupAction<CR>
+vnoremap <Leader>- :<c-u>action Refactorings.QuickListPopupAction<CR>
+nnoremap <Leader>cs :<c-u>action ChangeSignature<CR>
+vnoremap <Leader>cs :<c-u>action ChangeSignature<CR>
+nnoremap <Leader>" :<c-u>action SurroundWith<CR>
+vnoremap <Leader>" :<c-u>action SurroundWith<CR>
+nnoremap R :<c-u>action RenameElement<CR>
+vnoremap R :<c-u>action RenameElement<CR>
+
+nnoremap <c-k> :<c-u>action MoveStatementUp<CR>
+vnoremap <c-k> :<c-u>action MoveStatementUp<CR>
+nnoremap <c-j> :<c-u>action MoveStatementDown<CR>
+vnoremap <c-j> :<c-u>action MoveStatementDown<CR>
+
+nnoremap gs :<c-u>action GotoSuperMethod<CR>
+nnoremap gm :<c-u>action GotoImplementation<CR>
+nnoremap gf :<c-u>action GotoFile<CR>
+nnoremap gb :<c-u>action JumpToLastChange<CR>
+nnoremap gu :<c-u>action ShowUsages<CR>
+nnoremap gh :<c-u>action Back<CR>
+nnoremap gl :<c-u>action Forward<CR>
+
+nnoremap U :<c-u>action FindUsages<CR>
+nnoremap <Leader>U :<c-u>action HighlightUsagesInFile<CR>
+
+nnoremap <Leader>= :<c-u>action ReformatCode<CR>
+vnoremap <Leader>= :<c-u>action ReformatCode<CR>
+
+nnoremap <c-CR> :<c-u>action ShowIntentionActions<CR>
+
+nnoremap <Leader>A :<c-u>action GotoAction<CR>
+vnoremap <Leader>A :<c-u>action GotoAction<CR>
+
+nnoremap <Leader>e :<c-u>action GotoNextError<CR>
+nnoremap <Leader>E :<c-u>action GotoPreviousError<CR>
+nnoremap <Leader>I :<c-u>action ShowErrorDescription<CR>
+nnoremap <Leader>i :<c-u>action QuickJavaDoc<CR>
+nnoremap <Leader>d :<c-u>action QuickTypeDefinition<CR>
+nnoremap <Leader>z :<c-u>action ToggleDistractionFreeMode<CR>
+nnoremap <Leader>Z :<c-u>action HideAllWindows<CR>
+
+nnoremap <Leader>D :<c-u>action ActivateDebugToolWindow<CR>
+nnoremap <Leader>S :<c-u>action ActivateServicesToolWindow<CR>
+nnoremap <Leader>R :<c-u>action ActivateRunToolWindow<CR>
+nnoremap <Leader>C :<c-u>action ActivateCommitToolWindow<CR>
+nnoremap <Leader>T :<c-u>action ActivateTerminalToolWindow<CR>
+
+nnoremap <Leader>w<Leader> :<c-u>action MoveEditorToOppositeTabGroup<CR>
+
+nnoremap <Leader>k :<c-u>action EditorCodeBlockStart<CR>
+vnoremap <Leader>k :<c-u>action EditorCodeBlockStart<CR>
+nnoremap <Leader>j :<c-u>action EditorCodeBlockEnd<CR>
+vnoremap <Leader>j :<c-u>action EditorCodeBlockEnd<CR>
+
+nnoremap <Leader>G :<c-u>action SelectNextOccurrence<CR>
+vnoremap <Leader>G :<c-u>action SelectNextOccurrence<CR>
+nnoremap <Leader><c-g> :<c-u>action SelectAllOccurrences<CR>
+vnoremap <Leader><c-g> :<c-u>action SelectAllOccurrences<CR>
+
+nnoremap U :<c-u>action EditorSelectWord<CR>
+vnoremap U :<c-u>action EditorSelectWord<CR>
+nnoremap <m-u> :<c-u>action EditorUnSelectWord<CR>
+vnoremap <m-u> :<c-u>action EditorUnSelectWord<CR>
